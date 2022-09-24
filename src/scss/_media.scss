@@ -1,0 +1,70 @@
+// desktop >= 1025px
+@include desktop {
+  .menu__footer {
+    display: none;
+  }
+}
+
+// small-desktop <= 1280px
+@include small-desktop {
+
+}
+
+// tablet <= 1024px
+@include tablet {
+  .menu {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: var(--header-height);
+    bottom: 0;
+    z-index: 7;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    overflow: auto;
+    padding: 24px 15px 77px;
+    background-color: $light-color;
+    opacity: 0;
+    transition: $menu-transition ease;
+
+    &.is-active {
+      opacity: 1;
+    }
+  }
+
+  .overlay {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: var(--header-height);
+    bottom: 0;
+    z-index: 5;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(#000, 0.5);
+    opacity: 0;
+    transition: $menu-transition;
+
+    &.is-active {
+      opacity: 1;
+    }
+  }
+}
+
+// small-tablet <= 768px
+@include small-tablet {
+}
+
+// mobile <= 576px
+@include mobile {
+}
+
+// small-mobile <= 476px
+@include small-mobile {
+}
+
+// xs-mobile <= 376px
+@include small-mobile {
+}

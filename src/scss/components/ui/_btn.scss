@@ -1,0 +1,26 @@
+.btn {
+  border: none;
+  border-radius: 5px;
+  padding: 16px 30px;
+  min-width: 237px;
+  font-weight: 500;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: $light-color;
+  background: transparent;
+  background-color: $accent-color;
+  transition: $transition;
+  cursor: pointer;
+
+  &:focus,
+  &:active {
+    box-shadow: none;
+    background-color: #c8070f;
+  }
+
+  @include hover {
+    &:hover {
+      box-shadow: 0 1px 25px rgba(210, 35, 42, 80%);
+    }
+  }
+}
