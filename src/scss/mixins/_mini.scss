@@ -110,7 +110,7 @@ $browser-context: 16; // Default
   display: block;
 }
 
-@mixin circle($size: 56px, $color: $accent-color) {
+@mixin circle($size: 56px, $color: $primary-color) {
   width: $size;
   height: $size;
   border-radius: 50%;
@@ -122,7 +122,7 @@ $browser-context: 16; // Default
   height: 0;
   border-style: solid;
   border-width: 0 $size $size 0;
-  border-color: transparent $accent-color transparent transparent;
+  border-color: transparent $primary-color transparent transparent;
 }
 
 @mixin absolute-center {
@@ -130,4 +130,14 @@ $browser-context: 16; // Default
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+
+@mixin bg-decor($size: 40px) {
+  content: "";
+  position: absolute;
+  user-select: none;
+  appearance: none;
+  width: $size;
+  height: $size;
+  background: url("../img/decor-box.svg") center / cover no-repeat;
 }

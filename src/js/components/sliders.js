@@ -1,6 +1,6 @@
-import Swiper, { Pagination } from 'swiper';
+import Swiper, { Pagination, Navigation } from 'swiper';
 
-Swiper.use([Pagination]);
+Swiper.use([Navigation, Pagination]);
 
 function initMobileSlider(parent, wrapper, items, breakpoint = 768) {
   if (window.innerWidth <= breakpoint) {
@@ -23,3 +23,12 @@ function initMobileSlider(parent, wrapper, items, breakpoint = 768) {
     });
   }
 }
+
+const reviews = new Swiper('.reviews__slider', {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  navigation: {
+    nextEl: '.reviews__next',
+    prevEl: '.reviews__prev',
+  },
+});

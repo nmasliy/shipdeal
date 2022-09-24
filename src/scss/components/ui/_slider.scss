@@ -1,0 +1,23 @@
+.slider-arrow {
+  @include circle(44px, transparent);
+
+  position: absolute;
+  top: 50%;
+  border: 1px solid $primary-color;
+  background: url("../img/arrow-left-icon.svg") center no-repeat;
+  transform: translateY(-50%);
+  cursor: pointer;
+
+  &.swiper-button-disabled {
+    opacity: 0.5;
+  }
+
+  &--prev {
+    left: 0;
+  }
+
+  &--next {
+    right: 0;
+    transform: translateY(-50%) rotate(180deg);
+  }
+}

@@ -4,7 +4,6 @@
   const $menu = document?.querySelector('[data-menu]');
   const $burger = document?.querySelector('[data-burger]');
   const $close = document?.querySelector('[data-menu-close]');
-  const $overlay = document?.querySelector('[data-menu-overlay]');
   const $menuItems = document?.querySelectorAll('[data-menu-item]');
   const TRANSITION_DELAY = 400;
   const MOBILE_MENU_BREAKPOINT = 1024;
@@ -17,7 +16,6 @@
       isInit = true;
       $burger.addEventListener('click', toggleMenu);
       $close?.addEventListener('click', closeMenu);
-      $overlay?.addEventListener('click', closeMenu);
       $menuItems.forEach((el) => {
         el.addEventListener('click', closeMenu);
       });
@@ -28,7 +26,6 @@
   checkScreenWidth();
 
   function openMenu() {
-    $overlay.style.display = 'block';
     $menu.style.display = 'flex';
     $burger.setAttribute('aria-expanded', 'true');
     $burger.setAttribute('aria-label', 'Закрыть меню');
@@ -36,7 +33,6 @@
     $html.classList.add('disable-scroll');
 
     setTimeout(function () {
-      $overlay.classList.add('is-active');
       $menu.classList.add('is-active');
       $burger.classList.add('is-active');
       $header.classList.add('is-active');
@@ -44,7 +40,6 @@
   }
 
   function closeMenu() {
-    $overlay.classList.remove('is-active');
     $menu.classList.remove('is-active');
     $burger.classList.remove('is-active');
     $header.classList.remove('is-active');
@@ -54,7 +49,6 @@
     $html.classList.remove('disable-scroll');
 
     setTimeout(function () {
-      $overlay.style.display = '';
       $menu.style.display = '';
     }, TRANSITION_DELAY);
   }

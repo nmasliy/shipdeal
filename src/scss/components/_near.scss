@@ -7,8 +7,9 @@
     &::before {
       @include bg-decor(43px);
 
-      right: 70px;
-      top: -28px;
+      right: 79px;
+      top: -46px;
+      transform: rotate(45deg);
     }
 
     &::after {
@@ -16,6 +17,7 @@
 
       left: -103px;
       bottom: -104px;
+      transform: rotate(45deg);
     }
   }
 

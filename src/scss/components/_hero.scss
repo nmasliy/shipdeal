@@ -92,7 +92,7 @@
       &.active {
         position: relative;
         height: 54px;
-        color: $light-color;
+        color: $white-color;
         background: $accent-gradient;
       }
     }
@@ -113,7 +113,7 @@
   }
 
   &__subtitle {
-    margin-bottom: 50px;
+    margin: 37px 0 50px;
     text-transform: uppercase;
   }
 
