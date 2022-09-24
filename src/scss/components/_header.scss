@@ -1,0 +1,24 @@
+.header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 2;
+  padding: 12px 0;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+  }
+
+  &__btn {
+    margin-left: auto;
+  }
+
+  &__nav {
+    margin-left: 80px;
+  }
+}

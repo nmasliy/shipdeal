@@ -1,0 +1,18 @@
+.nav {
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    @include mr(33px);
+
+    font-size: 14px;
+    line-height: 17px;
+    color: $black-color;
+    transition: $transition;
+
+    @include hover {
+      color: $accent-color;
+    }
+  }
+}

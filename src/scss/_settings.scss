@@ -89,14 +89,6 @@ a {
   margin: 0 auto;
   padding: 0 $container-offset;
   max-width: $container-width;
-
-  &--lg {
-    max-width: $container-width + 160px;
-  }
-
-  &--sm {
-    max-width: $container-width - 20px;
-  }
 }
 
 .centered {
@@ -111,61 +103,12 @@ a {
   }
 }
 
+.logo {
+  picture {
+    display: flex;
+  }
+}
+
 .section-offset {
-  padding: 150px 0;
-
-  &-sm {
-    padding: 75px 0;
-  }
-}
-
-.simplebar-scrollbar::before {
-  background-color: $light-color;
-}
-
-.plyr--video {
-  .plyr__controls {
-    left: 74px;
-    right: 74px;
-    bottom: 24px;
-    display: flex;
-    align-items: center;
-    border-radius: 22.2275px;
-    padding: 25px 40px;
-    background: rgba(45, 45, 45, 65%);
-    backdrop-filter: blur(6.94609px);
-  }
-
-  .plyr__progress__buffer {
-    border-radius: 16.67px;
-    background-color: rgba($light-color, 0.5);
-  }
-
-  .plyr__progress__container {
-    margin-left: 45px;
-  }
-
-  .plyr__controls .plyr__controls__item:first-child {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    width: 33px;
-    height: 33px;
-    color: rgba(45, 45, 45, 65%);
-    background-color: $light-color;
-
-    svg {
-      width: 14px;
-      height: 14px;
-    }
-  }
-
-  input[type="range"] {
-    color: $light-color;
-  }
-}
-
-.slider-pagination {
-  display: none;
+  margin: 140px 0;
 }

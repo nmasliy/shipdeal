@@ -1,0 +1,143 @@
+.hero {
+  @include max-w-full-hd;
+
+  position: relative;
+  padding-top: calc(var(--header-height) + 65px);
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 518px;
+    min-height: 800px;
+    background: url("../img/hero-bg-items.svg") bottom right no-repeat;
+    background-color: $accent-color;
+  }
+
+  &__inner {
+    @include blockOuterContainer;
+  }
+
+  &__content {
+    position: relative;
+    flex-shrink: 0;
+    margin-right: 43px;
+    max-width: 572px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -115px;
+      top: 0;
+      z-index: -1;
+      width: 47px;
+      height: 47px;
+      background: url("../img/decor-box.svg") center / cover no-repeat;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: 40px;
+      z-index: -1;
+      width: 40px;
+      height: 40px;
+      background: url("../img/decor-box.svg") center / cover no-repeat;
+    }
+  }
+
+  &__img {
+    margin-left: auto;
+    width: 726px;
+
+    picture {
+      display: flex;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__tabs {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+    padding: 0 1px;
+    color: $secondary-color;
+
+    a {
+      display: flex;
+      align-items: center;
+      margin: 0 -1px;
+      border: 1px solid rgba($secondary-color, 0.8);
+      padding: 12px 30px;
+      height: 48px;
+
+      svg {
+        flex-shrink: 0;
+        margin-right: 6px;
+
+        path {
+          stroke: currentcolor;
+        }
+      }
+
+      &:first-child {
+        border-radius: 50px 0 0 50px;
+        padding-right: 40px;
+        padding-left: 40px;
+      }
+
+      &:last-child {
+        border-radius: 0 50px 50px 0;
+      }
+
+      &.active {
+        position: relative;
+        height: 54px;
+        color: $light-color;
+        background: $secondary-gradient;
+      }
+    }
+  }
+
+  &__title {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: -70px;
+      top: -61px;
+      width: 125px;
+      height: 75px;
+      background: url("../img/decor-arrow-1.svg") center no-repeat;
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 50px;
+    text-transform: uppercase;
+  }
+
+  &__caption {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  &__buttons {
+    display: flex;
+  }
+
+  &__btn {
+    @include mr(20px);
+
+    display: flex;
+  }
+}

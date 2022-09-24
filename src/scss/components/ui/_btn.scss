@@ -7,20 +7,31 @@
   font-size: 20px;
   text-transform: uppercase;
   color: $light-color;
-  background: transparent;
-  background-color: $accent-color;
+  background: $accent-color;
   transition: $transition;
   cursor: pointer;
 
   &:focus,
   &:active {
-    box-shadow: none;
-    background-color: #c8070f;
+    background-color: $light-color;
   }
 
   @include hover {
     &:hover {
-      box-shadow: 0 1px 25px rgba(210, 35, 42, 80%);
+      background-color: $light-color;
     }
   }
+}
+
+.btn-outline {
+  border: 1px solid $light-color;
+  border-radius: 100px;
+  padding: 16px 38px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
+  color: $light-color;
+  background: $accent-color;
+  transition: $transition;
+  cursor: pointer;
 }
