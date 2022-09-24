@@ -1,10 +1,11 @@
 .burger {
-  $burger-width: 22px;
-  $burger-height: 22px;
+  $burger-width: 24px;
+  $burger-height: 16px;
   $burger-line-height: 3px;
 
   position: relative;
   display: none;
+  margin-left: 27px;
   border: none;
   padding: 0;
   width: $burger-width;
@@ -18,6 +19,7 @@
     content: "";
     position: absolute;
     left: 0;
+    border-radius: 2px;
     width: 100%;
     height: $burger-line-height;
     background-color: currentcolor;
@@ -38,11 +40,12 @@
     position: absolute;
     left: 0;
     top: 50%;
+    border-radius: 2px;
     width: 100%;
     height: $burger-line-height;
     background-color: currentcolor;
     transform: translateY(-50%);
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.25s ease-in-out;
   }
 
   &.is-active {

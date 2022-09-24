@@ -1,0 +1,61 @@
+.why {
+  &__inner {
+    position: relative;
+
+    &::before {
+      @include bg-decor(28px);
+
+      left: 78px;
+      top: 92px;
+    }
+
+    &::after {
+      @include bg-decor;
+
+      right: 30px;
+      top: 80px;
+    }
+  }
+
+  &__title {
+  }
+
+  &__subtitle {
+    margin-bottom: 50px;
+  }
+
+  &__content {
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 45px 25px;
+  }
+
+  &__item {
+    text-align: center;
+  }
+
+  &__img {
+    margin-bottom: 16px;
+
+    picture {
+      display: flex;
+    }
+
+    img {
+      border-radius: 6px;
+      width: 100%;
+      max-height: 200px;
+    }
+  }
+
+  &__name {
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: $black-color;
+  }
+}

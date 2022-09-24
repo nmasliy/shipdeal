@@ -1,4 +1,6 @@
 .nav {
+  margin-left: 80px;
+
   &__list {
     display: flex;
   }
@@ -12,7 +14,7 @@
     transition: $transition;
 
     @include hover {
-      color: $accent-color;
+      color: $primary-color;
     }
   }
 }

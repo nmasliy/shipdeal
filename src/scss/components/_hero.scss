@@ -14,7 +14,7 @@
     width: 518px;
     min-height: 800px;
     background: url("../img/hero-bg-items.svg") bottom right no-repeat;
-    background-color: $accent-color;
+    background-color: $primary-color;
   }
 
   &__inner {
@@ -28,25 +28,17 @@
     max-width: 572px;
 
     &::before {
-      content: "";
-      position: absolute;
+      @include bg-decor(47px);
+
       left: -115px;
       top: 0;
-      z-index: -1;
-      width: 47px;
-      height: 47px;
-      background: url("../img/decor-box.svg") center / cover no-repeat;
     }
 
     &::after {
-      content: "";
-      position: absolute;
-      left: 50%;
+      @include bg-decor;
+
+      left: 70%;
       bottom: 40px;
-      z-index: -1;
-      width: 40px;
-      height: 40px;
-      background: url("../img/decor-box.svg") center / cover no-repeat;
     }
   }
 
@@ -68,13 +60,13 @@
     align-items: center;
     margin-bottom: 24px;
     padding: 0 1px;
-    color: $secondary-color;
+    color: $accent-color;
 
     a {
       display: flex;
       align-items: center;
       margin: 0 -1px;
-      border: 1px solid rgba($secondary-color, 0.8);
+      border: 1px solid rgba($accent-color, 0.8);
       padding: 12px 30px;
       height: 48px;
 
@@ -101,7 +93,7 @@
         position: relative;
         height: 54px;
         color: $light-color;
-        background: $secondary-gradient;
+        background: $accent-gradient;
       }
     }
   }
