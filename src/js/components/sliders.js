@@ -46,5 +46,3 @@ const ship = new Swiper('.ship__slider', {
   },
   watchSlidesProgress: true,
 });
-
-console.log(ship);
