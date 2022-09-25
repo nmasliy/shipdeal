@@ -127,6 +127,7 @@ a {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  outline: transparent;
   border: none;
   border-radius: 0;
   background-color: #fff;
@@ -334,6 +335,7 @@ a {
   border-radius: 100px;
   padding: 20px 47px;
   min-width: 250px;
+  font-family: "Rubik", sans-serif;
   font-weight: 500;
   font-size: 14px;
   color: #fff;
@@ -350,6 +352,7 @@ a {
   border: 1px solid #fff;
   border-radius: 100px;
   padding: 16px 38px;
+  font-family: "Rubik", sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.5;
@@ -403,6 +406,67 @@ a {
 }
 .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
   opacity: 1;
+}
+
+.form__caption {
+  margin-bottom: 5px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.8);
+}
+.form__input {
+  display: block;
+  border-radius: 8px;
+  padding: 24px 30px;
+  width: 100%;
+  font-family: "Rubik", sans-serif;
+  line-height: 1.5;
+  color: inherit;
+}
+.form__input::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+.form__input::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+.form__input:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+.form__input::-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+.form__input::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+.form__input--price {
+  padding: 10px 30px;
+  font-weight: 600;
+  font-size: 34px;
+  color: #ffa928;
+  background-color: rgba(29, 27, 27, 0.16);
+}
+.form__input--price::-webkit-input-placeholder {
+  color: #ffa928;
+}
+.form__input--price::-moz-placeholder {
+  color: #ffa928;
+}
+.form__input--price:-ms-input-placeholder {
+  color: #ffa928;
+}
+.form__input--price::-ms-input-placeholder {
+  color: #ffa928;
+}
+.form__input--price::placeholder {
+  color: #ffa928;
+}
+.form__row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 322px 322px 175px 175px;
+  grid-template-columns: 322px 322px 175px 175px;
+  margin-bottom: 50px;
+  gap: 24px;
 }
 
 .header {
@@ -1309,7 +1373,9 @@ a {
   border-radius: 2px;
   width: 10px;
   height: 10px;
-  background-color: #fff;
+  background: -webkit-gradient(linear, left top, right top, from(#f90), to(#ffaa2c));
+  background: -o-linear-gradient(left, #f90 0%, #ffaa2c 100%);
+  background: linear-gradient(90deg, #f90 0%, #ffaa2c 100%);
 }
 .how__head::after {
   width: 30px;
@@ -1332,7 +1398,7 @@ a {
 .how__info {
   display: none;
   margin-top: 17px;
-  max-width: 353px;
+  padding-left: 24px;
   color: rgba(255, 255, 255, 0.8);
 }
 .how__images {
@@ -1647,6 +1713,30 @@ a {
 }
 .ship__prev, .ship__next {
   background-color: #fff;
+}
+
+.calculator {
+  padding: 140px 0;
+  background: url("../img/calculator-bg.svg") center no-repeat;
+  background-color: #265feb;
+}
+.calculator__inner {
+  margin: 0 auto;
+  max-width: 1070px;
+}
+.calculator__title {
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 1.5;
+  color: #fff;
+}
+.calculator__subtitle {
+  margin-top: 16px;
+  margin-bottom: 50px;
+  color: #fff;
+}
+.calculator__btn {
+  min-width: 280px;
 }
 
 @media (min-width: 1025px) {

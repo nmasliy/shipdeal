@@ -74,7 +74,7 @@
       border-radius: 2px;
       width: 10px;
       height: 10px;
-      background-color: $white-color;
+      background: $accent-gradient;
     }
 
     &::after {
@@ -94,7 +94,7 @@
   &__info {
     display: none;
     margin-top: 17px;
-    max-width: 353px;
+    padding-left: 24px;
     color: rgba($white-color, 0.8);
   }
 
