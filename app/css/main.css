@@ -1894,6 +1894,105 @@ a {
   display: flex;
 }
 
+.history {
+  padding: 140px 0;
+  background-color: #f2f6fe;
+}
+.history__head {
+  margin-bottom: 45px;
+}
+.history__subtitle {
+  max-width: 730px;
+}
+.history__inner {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 60px;
+}
+.history__content {
+  max-width: 560px;
+  line-height: 1.5;
+}
+.history__content p {
+  margin: 15px 0;
+}
+.history__content p:first-child {
+  margin-top: 0;
+}
+.history__content strong,
+.history__content b {
+  font-weight: 600;
+}
+.history__content ul {
+  margin: 15px 0;
+}
+.history__content li {
+  position: relative;
+  margin-bottom: 12px;
+  padding-left: 23px;
+}
+.history__content li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 5px;
+  border-radius: 1px;
+  width: 10px;
+  height: 10px;
+  background-color: #265feb;
+}
+.history__images {
+  position: relative;
+}
+.history__images::before {
+  content: "";
+  position: absolute;
+  left: -8px;
+  top: calc(50% - 18px);
+  width: 27px;
+  height: 86px;
+  background: url("../img/decor-arrow-outline.svg") center no-repeat;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.history__box {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1fr 1fr;
+  grid-template-columns: auto 1fr 1fr;
+  margin-bottom: 16px;
+  gap: 16px;
+}
+.history__box:last-child {
+  margin-bottom: 0;
+}
+.history__box-title {
+  margin-left: 20px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  color: #333;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.history__img img {
+  border-radius: 6px;
+}
+.history__img picture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 @media (min-width: 1025px) {
   .menu__footer {
     display: none;
