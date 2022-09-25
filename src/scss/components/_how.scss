@@ -1,0 +1,120 @@
+.how {
+  // @include max-w-full-hd;
+
+  padding: 100px 0 90px;
+  color: $white-color;
+  background-color: $primary-color;
+
+  &__inner {
+    @include blockOuterContainer;
+  }
+
+  &__content {
+    flex-shrink: 0;
+    max-width: 500px;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+    color: $white-color;
+  }
+
+  &__tabs {
+  }
+
+  &__item {
+    border-top: 1px solid rgba($white-color, 0.16);
+    padding: 26px 70px 26px 30px;
+    transition: $transition;
+
+    &:first-child {
+      border: transparent;
+    }
+
+    &.is-active {
+      border: transparent;
+      border-radius: 6px;
+      padding-bottom: 35px;
+      background-color: rgba(246, 248, 255, 10%);
+
+      + .how__item {
+        border: transparent;
+      }
+
+      .how {
+        &__info {
+          display: block;
+        }
+
+        &__head {
+          &::after {
+            transform: translateY(-50%) rotate(180deg);
+          }
+        }
+      }
+    }
+  }
+
+  &__head {
+    position: relative;
+    padding-left: 24px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    transition: $transition;
+    cursor: pointer;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 7px;
+      border-radius: 2px;
+      width: 10px;
+      height: 10px;
+      background-color: $white-color;
+    }
+
+    &::after {
+      @include circle(30px, transparent);
+
+      content: "";
+      position: absolute;
+      right: -40px;
+      top: 50%;
+      border: 1px solid $white-color;
+      background: url("../img/arrow-down-icon.svg") center no-repeat;
+      transform: translateY(-50%);
+      transition: $transition;
+    }
+  }
+
+  &__info {
+    display: none;
+    margin-top: 17px;
+    max-width: 353px;
+    color: rgba($white-color, 0.8);
+  }
+
+  &__images {
+    position: relative;
+    margin-left: auto;
+    width: 720px;
+
+    picture {
+      display: flex;
+    }
+  }
+
+  &__phone {
+    position: absolute;
+    left: -50px;
+    bottom: -137px;
+  }
+
+  &__img {
+    img {
+      width: 100%;
+    }
+  }
+}
