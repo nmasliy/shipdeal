@@ -1,0 +1,51 @@
+.earn {
+  padding-top: 30px;
+  background:
+    url("../img/earn-bg-center.svg") left 31% center no-repeat,
+    url("../img/earn-bg-left.svg") left no-repeat,
+    url("../img/earn-bg-right.svg") right no-repeat;
+  background-color: $primary-color;
+
+  &__inner {
+    display: flex;
+  }
+
+  &__content {
+    padding-top: 100px;
+    max-width: 460px;
+    color: $white-color;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    color: $white-color;
+  }
+
+  &__text {
+    margin-bottom: 55px;
+    max-width: 250px;
+  }
+
+  &__buttons {
+    display: flex;
+  }
+
+  &__btn {
+    img {
+      display: flex;
+    }
+
+    &:last-child {
+      margin-left: 20px;
+    }
+  }
+
+  &__img {
+    position: relative;
+    right: -30px;
+
+    picture {
+      display: flex;
+    }
+  }
+}

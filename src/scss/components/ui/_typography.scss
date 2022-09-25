@@ -32,3 +32,10 @@
 .color-accent {
   color: $accent-color;
 }
+
+.accent-badge {
+  border-radius: 10px;
+  padding: 2px 12px;
+  background-image: $accent-gradient;
+  background-color: $accent-color;
+}
