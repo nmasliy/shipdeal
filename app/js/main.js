@@ -1180,6 +1180,19 @@ const reviews = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.reviews__sl
     prevEl: '.reviews__prev'
   }
 });
+const ship = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.ship__slider', {
+  slidesPerView: 3,
+  spaceBetween: 0,
+  watchSlidesProgress: true,
+  navigation: {
+    nextEl: '.ship__next',
+    prevEl: '.ship__prev'
+  },
+  pagination: {
+    el: '.ship__pagination',
+    clickable: true
+  }
+});
 
 /***/ }),
 

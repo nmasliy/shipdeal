@@ -3,6 +3,7 @@
 
   position: absolute;
   top: 50%;
+  z-index: 3;
   border: 1px solid $primary-color;
   background: url("../img/arrow-left-icon.svg") center no-repeat;
   transform: translateY(-50%);
@@ -19,5 +20,21 @@
   &--next {
     right: 0;
     transform: translateY(-50%) rotate(180deg);
+  }
+}
+
+.swiper-pagination {
+  position: static;
+
+  .swiper-pagination-bullet {
+    width: 11px;
+    height: 11px;
+    background-color: $primary-color;
+    opacity: 0.14;
+    transition: opacity $transition;
+
+    &.swiper-pagination-bullet-active {
+      opacity: 1;
+    }
   }
 }

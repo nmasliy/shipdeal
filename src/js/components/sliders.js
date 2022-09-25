@@ -32,3 +32,17 @@ const reviews = new Swiper('.reviews__slider', {
     prevEl: '.reviews__prev',
   },
 });
+
+const ship = new Swiper('.ship__slider', {
+  slidesPerView: 3,
+  spaceBetween: 0,
+  watchSlidesProgress: true,
+  navigation: {
+    nextEl: '.ship__next',
+    prevEl: '.ship__prev',
+  },
+  pagination: {
+    el: '.ship__pagination',
+    clickable: true
+  },
+});
