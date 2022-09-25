@@ -15,20 +15,25 @@
 
   &__slider {
     overflow: visible;
+    height: 480px;
   }
 
   .swiper-slide {
-    opacity: 0;
-    transition: $transition;
+    .ship__item {
+      opacity: 0;
+    }
 
     &.swiper-slide-visible {
-      opacity: 1;
+      .ship__item {
+        opacity: 1;
+      }
     }
   }
 
   &__item {
     padding: 40px 15px;
     filter: drop-shadow(0 4px 30px rgba(0, 0, 0, 8%));
+    transition: opacity $transition;
   }
 
   &__img {

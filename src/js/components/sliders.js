@@ -36,7 +36,6 @@ const reviews = new Swiper('.reviews__slider', {
 const ship = new Swiper('.ship__slider', {
   slidesPerView: 3,
   spaceBetween: 0,
-  watchSlidesProgress: true,
   navigation: {
     nextEl: '.ship__next',
     prevEl: '.ship__prev',
@@ -45,4 +44,7 @@ const ship = new Swiper('.ship__slider', {
     el: '.ship__pagination',
     clickable: true
   },
+  watchSlidesProgress: true,
 });
+
+console.log(ship);
