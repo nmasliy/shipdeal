@@ -11,11 +11,7 @@
       <div class="menu" data-menu>
         @include('nav.html', {classes: 'header__nav'})
         <div class="menu__footer">
-          <div class="menu__address">
-            Одесская обл., пгт. Грибовка, ул. Приморская, 20
-          </div>
-          <a class="menu__phone" href="+380661234339">+38 066 123 43 39</a>
-          <a class="menu__phone" href="+380800753763">+38 080 075 37 63</a>
+          @include('contacts-info.html')
         </div>
       </div>
       <a class="header__btn btn-outline" href="#">Войти</a>

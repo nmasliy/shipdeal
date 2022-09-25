@@ -501,6 +501,41 @@ a {
   margin-left: auto;
 }
 
+.contacts-info__address {
+  position: relative;
+  display: block;
+  margin-bottom: 25px;
+  padding-left: 35px;
+  color: rgba(47, 47, 52, 0.86);
+}
+.contacts-info__address::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 22px;
+  height: 22px;
+  background: url("../img/address-icon.svg") center no-repeat;
+}
+.contacts-info__phone {
+  position: relative;
+  display: block;
+  margin-bottom: 16px;
+  padding-left: 35px;
+  font-size: 20px;
+  letter-spacing: 0.05em;
+  color: #2f2f34;
+}
+.contacts-info__phone::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 22px;
+  height: 22px;
+  background: url("../img/phone-icon.svg") center no-repeat;
+}
+
 .hero {
   margin-right: auto;
   margin-left: auto;
@@ -1993,6 +2028,41 @@ a {
   display: flex;
 }
 
+.contacts__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1090px;
+}
+.contacts__content {
+  position: relative;
+  max-width: 340px;
+}
+.contacts__content::after {
+  content: "";
+  position: absolute;
+  right: -62px;
+  top: -5px;
+  width: 91px;
+  height: 91px;
+  background: url("../img/decor-arrow-4.svg") center no-repeat;
+}
+.contacts__title {
+  margin-bottom: 50px;
+}
+.contacts__map iframe {
+  border-radius: 10px 0 0;
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+}
+
 @media (min-width: 1025px) {
   .menu__footer {
     display: none;
@@ -2083,40 +2153,6 @@ a {
   .menu__footer {
     margin-top: auto;
     padding: 30px;
-  }
-  .menu__address {
-    position: relative;
-    display: block;
-    margin-bottom: 25px;
-    padding-left: 35px;
-    color: rgba(47, 47, 52, 0.86);
-  }
-  .menu__address::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 22px;
-    height: 22px;
-    background: url("../img/address-icon.svg") center no-repeat;
-  }
-  .menu__phone {
-    position: relative;
-    display: block;
-    margin-bottom: 16px;
-    padding-left: 35px;
-    font-size: 20px;
-    letter-spacing: 0.05em;
-    color: #2f2f34;
-  }
-  .menu__phone::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 22px;
-    height: 22px;
-    background: url("../img/phone-icon.svg") center no-repeat;
   }
   .menu.is-active {
     opacity: 1;
