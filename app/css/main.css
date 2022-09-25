@@ -1014,11 +1014,22 @@ a {
   gap: 30px;
 }
 .action__box {
-  overflow: hidden;
   border-radius: 16px;
   -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.08);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.08);
   background-color: #fff;
+}
+.action__box:first-child {
+  position: relative;
+}
+.action__box:first-child::after {
+  content: "";
+  position: absolute;
+  right: -5px;
+  top: 70px;
+  width: 106px;
+  height: 102px;
+  background: url("../img/decor-arrow-2.svg") center no-repeat;
 }
 .action__box--primary {
   -webkit-box-shadow: none;
@@ -1036,6 +1047,7 @@ a {
   color: #fff;
 }
 .action__box-item {
+  overflow: hidden;
   padding: 62px 50px 49px;
 }
 .action__box-item:first-child {
@@ -1409,6 +1421,78 @@ a {
 }
 .delivery__text {
   padding: 0 25px;
+}
+
+.video {
+  padding: 140px 0;
+  background-color: #f2f6fe;
+}
+.video__inner {
+  position: relative;
+  margin: 0 auto;
+  max-width: 876px;
+}
+.video__inner::after {
+  content: "";
+  position: absolute;
+  right: -183px;
+  top: 51px;
+  width: 126px;
+  height: 76px;
+  background: url("../img/decor-arrow-3.svg") center no-repeat;
+}
+.video__title {
+  margin-bottom: 44px;
+}
+.video__box {
+  position: relative;
+}
+.video__box::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 16px;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(40, 50, 73, 0.5)), to(rgba(40, 50, 73, 0.5)));
+  background: -o-linear-gradient(bottom, rgba(40, 50, 73, 0.5), rgba(40, 50, 73, 0.5));
+  background: linear-gradient(0deg, rgba(40, 50, 73, 0.5), rgba(40, 50, 73, 0.5));
+}
+.video__box picture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.video__box picture img {
+  border-radius: 16px;
+}
+.video__play-btn {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 94px;
+  height: 94px;
+  border-radius: 50%;
+  background-color: #f90;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  z-index: 3;
+  background-image: -webkit-gradient(linear, left top, right top, from(#f90), to(#ffaa2c));
+  background-image: -o-linear-gradient(left, #f90 0%, #ffaa2c 100%);
+  background-image: linear-gradient(90deg, #f90 0%, #ffaa2c 100%);
 }
 
 @media (min-width: 1025px) {
