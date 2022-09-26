@@ -17,17 +17,33 @@
     }
   }
 
-  &__subtitle {
-    margin-bottom: 50px;
-  }
-
   &__content {
+    margin-top: 50px;
   }
 
   &__list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 45px 25px;
+
+    &--tripple {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 35px 30px;
+
+      .why {
+        &__img img {
+          border-radius: 14px;
+          height: 235px;
+        }
+
+        &__item {
+          p {
+            margin: 0 auto;
+            max-width: 322px;
+          }
+        }
+      }
+    }
   }
 
   &__item {

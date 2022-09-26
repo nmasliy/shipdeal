@@ -55,4 +55,9 @@
     z-index: 3;
     background-image: $accent-gradient;
   }
+
+  &--transparent {
+    padding: 0;
+    background-color: transparent;
+  }
 }

@@ -16,12 +16,16 @@
     max-width: 500px;
   }
 
-  &__title {
+  &__heading {
     margin-bottom: 30px;
-    color: $white-color;
   }
 
-  &__tabs {
+  &__subtitle {
+    margin-bottom: 55px;
+  }
+
+  &__title {
+    color: $white-color;
   }
 
   &__item {
