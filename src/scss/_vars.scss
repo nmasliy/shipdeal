@@ -13,3 +13,7 @@ $dark-color: rgba(#333, 0.8);
 $primary-color: #265feb;
 $accent-color: #f90;
 $accent-gradient: linear-gradient(90deg, #f90 0%, #ffaa2c 100%);
+
+:root {
+  --header-height: 79px;
+}

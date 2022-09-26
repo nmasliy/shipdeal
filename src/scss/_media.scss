@@ -7,15 +7,43 @@
 
 // small-desktop <= 1280px
 @include small-desktop {
+  .title-lg {
+    font-size: 52px;
+  }
+
+  .title {
+    font-size: 48px;
+  }
+
+  .title-sm {
+    font-size: 32px;
+  }
+
   .hero {
     &::after {
       width: 280px;
+    }
+
+    &__inner {
+      align-items: center;
     }
   }
 }
 
 // tablet <= 1024px
 @include tablet {
+  .title-lg {
+    font-size: 44px;
+  }
+
+  .title {
+    font-size: 36px;
+  }
+
+  .title-sm {
+    font-size: 28px;
+  }
+
   .btn-outline {
     border-color: $accent-color;
     padding: 6px 28px;
