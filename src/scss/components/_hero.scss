@@ -2,6 +2,7 @@
   @include max-w-full-hd;
 
   position: relative;
+  margin-top: calc(var(--header-height) * -1);
   padding-top: calc(var(--header-height) + 65px);
 
   &::after {
@@ -54,6 +55,10 @@
     picture {
       display: flex;
       justify-content: flex-end;
+    }
+
+    &-mob {
+      display: none;
     }
   }
 
@@ -133,6 +138,8 @@
   &__btn {
     @include mr(20px);
 
-    display: flex;
+    img {
+      display: flex;
+    }
   }
 }

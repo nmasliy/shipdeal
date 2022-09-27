@@ -37,13 +37,13 @@
 }
 
 @mixin small-mobile {
-  @media (max-width: (476px)) {
+  @media (max-width: (470px)) {
     @content;
   }
 }
 
 @mixin xs-mobile {
-  @media (max-width: (376px)) {
+  @media (max-width: (360px)) {
     @content;
   }
 }
