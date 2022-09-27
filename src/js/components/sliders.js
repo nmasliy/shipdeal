@@ -2,22 +2,21 @@ import Swiper, { Pagination, Navigation } from 'swiper';
 
 Swiper.use([Navigation, Pagination]);
 
-function initMobileSlider(parent, wrapper, items, breakpoint = 768) {
+function initMobileSlider(parent, wrapper, items, breakpoint = 1024) {
   if (window.innerWidth <= breakpoint) {
     const $parent = document.querySelector(parent);
     const $wrapper = $parent.querySelector(wrapper);
     const $items = $wrapper.querySelectorAll(items);
 
-    $parent.classList.add("swiper");
-    $wrapper.classList.add("swiper-wrapper");
-    $wrapper.classList.remove(wrapper.replace('.',''));
-    $items.forEach((slide) => slide.classList.add("swiper-slide"));
+    $parent.classList.add('swiper');
+    $wrapper.className = 'swiper-wrapper';
+    $items.forEach((slide) => slide.classList.add('swiper-slide'));
 
     const swiper = new Swiper(parent, {
       slidesPerView: 'auto',
       spaceBetween: 16,
       pagination: {
-        el: ".swiper-pagination",
+        el: '.swiper-pagination',
         clickable: true,
       },
     });
@@ -42,7 +41,9 @@ const ship = new Swiper('.ship__slider', {
   },
   pagination: {
     el: '.ship__pagination',
-    clickable: true
+    clickable: true,
   },
   watchSlidesProgress: true,
 });
+
+initMobileSlider('.why__content', '.why__list', '.why__item');

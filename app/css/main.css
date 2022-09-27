@@ -819,6 +819,9 @@ a {
   line-height: 24px;
   color: #333;
 }
+.why__pagination {
+  display: none;
+}
 
 .near {
   margin-bottom: 100px;
@@ -2388,6 +2391,21 @@ a {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
+  .why__content {
+    margin-right: -16px;
+    padding-right: 16px;
+  }
+  .why__pagination {
+    display: block;
+    margin-top: 30px;
+  }
+  .why__item {
+    width: 253px;
+    text-align: left;
+  }
+  .why__img img {
+    height: 160px;
+  }
 }
 @media (max-width: 768px) {
   .section-offset {
@@ -2497,6 +2515,39 @@ a {
   }
   .hero__btn:last-child img {
     width: 120px;
+  }
+  .why__inner::before, .why__inner::after {
+    display: none;
+  }
+  .why__content {
+    margin-top: 20px;
+  }
+  .why__item p {
+    font-size: 14px;
+  }
+  .why__name {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .near {
+    margin-bottom: 40px;
+  }
+  .near__inner::before, .near__inner::after {
+    display: none;
+  }
+  .near__title {
+    margin-bottom: 20px;
+  }
+  .near__map {
+    border-radius: 7px;
+  }
+  .near__map img,
+.near__map iframe {
+    border-radius: 7px;
+  }
+  .examples {
+    margin-top: 40px;
   }
 }
 @media (max-width: 576px) {

@@ -1151,21 +1151,20 @@ __webpack_require__.r(__webpack_exports__);
 swiper__WEBPACK_IMPORTED_MODULE_0__["default"].use([swiper__WEBPACK_IMPORTED_MODULE_0__.Navigation, swiper__WEBPACK_IMPORTED_MODULE_0__.Pagination]);
 
 function initMobileSlider(parent, wrapper, items) {
-  let breakpoint = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : 768;
+  let breakpoint = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : 1024;
 
   if (window.innerWidth <= breakpoint) {
     const $parent = document.querySelector(parent);
     const $wrapper = $parent.querySelector(wrapper);
     const $items = $wrapper.querySelectorAll(items);
-    $parent.classList.add("swiper");
-    $wrapper.classList.add("swiper-wrapper");
-    $wrapper.classList.remove(wrapper.replace('.', ''));
-    $items.forEach(slide => slide.classList.add("swiper-slide"));
+    $parent.classList.add('swiper');
+    $wrapper.className = 'swiper-wrapper';
+    $items.forEach(slide => slide.classList.add('swiper-slide'));
     const swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](parent, {
       slidesPerView: 'auto',
       spaceBetween: 16,
       pagination: {
-        el: ".swiper-pagination",
+        el: '.swiper-pagination',
         clickable: true
       }
     });
@@ -1193,6 +1192,7 @@ const ship = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.ship__slider',
   },
   watchSlidesProgress: true
 });
+initMobileSlider('.why__content', '.why__list', '.why__item');
 
 /***/ }),
 
