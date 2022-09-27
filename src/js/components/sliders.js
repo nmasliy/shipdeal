@@ -30,11 +30,33 @@ const reviews = new Swiper('.reviews__slider', {
     nextEl: '.reviews__next',
     prevEl: '.reviews__prev',
   },
+  pagination: {
+    el: '.reviews__pagination',
+    clickable: true
+  },
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 'auto',
+      spaceBetween: 8,
+    },
+    // when window width is >= 768px
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+    // when window width is >= 1280px
+    1280: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+  },
 });
 
 const ship = new Swiper('.ship__slider', {
   slidesPerView: 3,
   spaceBetween: 0,
+  watchSlidesProgress: true,
   navigation: {
     nextEl: '.ship__next',
     prevEl: '.ship__prev',
@@ -43,7 +65,7 @@ const ship = new Swiper('.ship__slider', {
     el: '.ship__pagination',
     clickable: true,
   },
-  watchSlidesProgress: true,
 });
+
 
 initMobileSlider('.why__content', '.why__list', '.why__item');

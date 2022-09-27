@@ -4,13 +4,12 @@
 
   &__inner {
     position: relative;
-    margin: 0 auto;
-    max-width: 876px;
+    padding: 0 182px;
 
     &::after {
       content: "";
       position: absolute;
-      right: -183px;
+      right: 0;
       top: 51px;
       width: 126px;
       height: 76px;

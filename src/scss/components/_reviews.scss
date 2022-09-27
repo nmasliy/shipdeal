@@ -113,6 +113,10 @@
     color: #676767;
   }
 
+  &__pagination {
+    display: none;
+  }
+
   &__prev,
   &__next {
     top: 35%;

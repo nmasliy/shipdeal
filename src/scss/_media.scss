@@ -39,6 +39,12 @@
       margin: 0 20px;
     }
   }
+
+  .reviews {
+    &__box {
+      padding-left: 60px;
+    }
+  }
 }
 
 // tablet <= 1024px
@@ -194,6 +200,134 @@
       img {
         height: 160px;
       }
+    }
+  }
+
+  .examples {
+    &__head {
+      font-size: 16px;
+
+      img {
+        font-size: 24px;
+      }
+    }
+
+    &__item {
+      padding: 20px 26px;
+    }
+
+    &__body {
+      td {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .delivery {
+    background: 0;
+
+    &__inner {
+      padding: 0;
+    }
+
+    &__items {
+      gap: 15px;
+    }
+
+    &__img {
+      margin-bottom: 12px;
+    }
+
+    &__name {
+      font-size: 20px;
+    }
+
+    &__text {
+      padding: 0 15px;
+      font-size: 14px;
+    }
+
+    &__caption {
+      padding: 18px 14px;
+      font-size: 12px;
+
+      &--1 {
+        left: 12px;
+        top: 10px;
+        max-width: 144px;
+      }
+
+      &--2 {
+        right: 38px;
+        bottom: 56px;
+        padding-right: 8px;
+        padding-left: 18px;
+        max-width: 164px;
+      }
+    }
+  }
+
+  .video {
+    padding: 60px 0;
+
+    &__inner {
+      padding: 0 80px;
+
+      &::after {
+        right: 0;
+        top: 0;
+        width: 90px;
+        height: 60px;
+        background-size: cover;
+      }
+    }
+
+    &__play-btn {
+      width: 64px;
+      height: 64px;
+
+      img {
+        width: 15px;
+      }
+    }
+  }
+
+  .benefits {
+    padding: 40px 0;
+
+    &__inner {
+      position: relative;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 140px;
+
+      &::before,
+      &::after {
+        display: none;
+      }
+    }
+
+    &__title {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      margin: 0 auto;
+      max-width: 400px;
+      text-align: center;
+    }
+
+    &__img {
+      flex-shrink: 1;
+      margin-bottom: 25px;
+
+      img {
+        width: 450px;
+      }
+    }
+
+    &__content {
+      padding-left: 0;
     }
   }
 }
@@ -378,6 +512,103 @@
 
   .examples {
     margin-top: 40px;
+
+    &__list {
+      display: block;
+    }
+
+    &__item {
+      @include mb(10px);
+    }
+  }
+
+  .video {
+    &__inner {
+      padding: 0;
+    }
+  }
+
+  .reviews {
+    .swiper-slide {
+      width: 310px;
+    }
+
+    &__title {
+      margin-bottom: 20px;
+    }
+
+    &__slider-wrapper {
+      margin: 0 -7px;
+      padding: 0;
+    }
+
+    &__slider {
+      margin: 0 -16px;
+      padding: 0 16px;
+    }
+
+    &__pagination {
+      display: block;
+      margin-top: 30px;
+    }
+
+    &__rating {
+      margin-bottom: 5px;
+    }
+
+    &__text {
+      font-size: 12px;
+
+      &::before {
+        display: none;
+      }
+    }
+
+    &__box {
+      padding: 17px 12px 17px 22px;
+    }
+
+    &__prev,
+    &__next {
+      display: none;
+    }
+  }
+
+  .discomfort {
+    padding: 60px 0;
+
+    &__title {
+      margin-bottom: 28px;
+    }
+
+    &__list {
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 20px;
+    }
+  }
+
+  .benefits {
+    &__inner {
+      padding-top: 120px;
+    }
+
+    &__title {
+      max-width: 300px;
+    }
+
+    &__list {
+      margin-bottom: 25px;
+    }
+
+    &__icon {
+      width: 52px;
+      height: 52px;
+    }
+
+    &__text {
+      margin-left: 20px;
+      font-size: 14px;
+    }
   }
 }
 
@@ -386,6 +617,74 @@
   .header {
     &__logo img {
       width: 130px;
+    }
+  }
+
+  .delivery {
+    &__items {
+      display: block;
+    }
+
+    &__item {
+      @include mb(20px);
+    }
+
+    &__text {
+      padding: 0 11px;
+    }
+
+    &__img {
+      picture {
+        justify-content: center;
+      }
+    }
+  }
+
+  .video {
+    &__title {
+      margin: 0 auto 20px;
+      margin-bottom: 20px;
+      max-width: 300px;
+    }
+
+    &__inner {
+      &::after {
+        right: 0;
+        top: 10px;
+        width: 65px;
+        height: 40px;
+        background-size: cover;
+      }
+    }
+
+    &__box {
+      border-radius: 6px;
+
+      &::after {
+        picture img {
+          border-radius: 6px;
+        }
+      }
+    }
+
+    &__play-btn {
+      width: 44px;
+      height: 44px;
+
+      img {
+        width: 13px;
+      }
+    }
+  }
+
+  .discomfort {
+    &__list {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    &__text {
+      margin: 0 auto;
+      max-width: 245px;
     }
   }
 }
@@ -414,6 +713,61 @@
     &__icon {
       flex-shrink: 0;
       margin-bottom: 0;
+      width: 52px;
+      height: 52px;
+    }
+  }
+
+  .video {
+    &__inner {
+      &::after {
+        right: -15px;
+        width: 50px;
+        height: 30px;
+      }
+    }
+  }
+
+  .discomfort {
+    &__list {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    &__title {
+      text-align: left;
+    }
+
+    &__item {
+      @include flex-v-center;
+
+      margin-right: auto;
+      margin-bottom: 22px;
+      margin-left: auto;
+      max-width: 302px;
+      text-align: left;
+
+      &:nth-child(4) {
+        order: 6;
+        margin-bottom: 0;
+      }
+
+      &:nth-child(6) {
+        order: 4;
+      }
+    }
+
+    &__text {
+      margin-left: 18px;
+      max-width: 100%;
+    }
+
+    &__icon {
+      flex-shrink: 0;
+      margin: 0;
+      width: 44px;
+      height: 44px;
     }
   }
 }
