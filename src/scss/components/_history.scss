@@ -57,6 +57,7 @@
 
   &__images {
     position: relative;
+    align-self: flex-start;
 
     &::before {
       content: "";

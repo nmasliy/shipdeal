@@ -65,6 +65,22 @@ const ship = new Swiper('.ship__slider', {
     el: '.ship__pagination',
     clickable: true,
   },
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      spaceBetween: 10,
+      slidesPerView: 'auto',
+    },
+    // when window width is >= 768px
+    768: {
+      spaceBetween: 0,
+      slidesPerView: 2,
+    },
+    // when window width is >= 1280px
+    1024: {
+      slidesPerView: 3,
+    },
+  },
 });
 
 

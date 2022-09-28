@@ -13,6 +13,7 @@
 
   &__content {
     flex-shrink: 0;
+    margin-right: 30px;
     max-width: 500px;
   }
 
@@ -109,6 +110,7 @@
 
     picture {
       display: flex;
+      justify-content: flex-end;
     }
   }
 
@@ -121,6 +123,10 @@
   &__img {
     img {
       width: 100%;
+    }
+
+    &-mob {
+      display: none;
     }
   }
 }

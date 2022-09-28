@@ -4,6 +4,6 @@ import '../functions/menu';
 
 getHeaderHeight()
 
-let func = throttle(getHeaderHeight);
-window.addEventListener('resize', func);
+let getHeaderHeightThrottle = throttle(getHeaderHeight);
+window.addEventListener('resize', getHeaderHeightThrottle);
 
