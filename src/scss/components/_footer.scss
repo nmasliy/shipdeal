@@ -19,6 +19,7 @@
       position: relative;
       margin-bottom: 26px;
       padding-left: 22px;
+      transition: $transition;
 
       &::before {
         content: "";
@@ -29,10 +30,19 @@
         width: 8px;
         height: 8px;
         background-color: $accent-color;
+        transition: $transition;
       }
 
       &:last-child {
         margin-bottom: 0;
+      }
+
+      @include hover {
+        color: rgba(255, 255, 255, 80%);
+
+        &::before {
+          background-color: rgba(255, 153, 0, 80%);
+        }
       }
     }
 

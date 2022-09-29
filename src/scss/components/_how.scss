@@ -3,10 +3,6 @@
   color: $white-color;
   background-color: $primary-color;
 
-  &__wrapper {
-    @include max-w-full-hd;
-  }
-
   &__inner {
     @include blockOuterContainer;
   }
@@ -105,13 +101,9 @@
 
   &__images {
     position: relative;
-    margin-left: auto;
-    width: 720px;
-
-    picture {
-      display: flex;
-      justify-content: flex-end;
-    }
+    flex-shrink: 0;
+    margin-left: 120px;
+    width: 940px;
   }
 
   &__phone {

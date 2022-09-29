@@ -12,14 +12,14 @@
   transition: $transition;
   cursor: pointer;
 
-  &:focus,
-  &:active {
+  @include hover {
+    background: linear-gradient(90deg, #ef8f00 0%, #f09d21 100%);
   }
 
-  @include hover {
-    &:hover {
-
-    }
+  /* stylelint-disable-next-line order/order */
+  &:active,
+  &:focus {
+    background: linear-gradient(90deg, #e28800 0%, #e09019 100%);
   }
 }
 
@@ -36,4 +36,16 @@
   background: $primary-color;
   transition: $transition;
   cursor: pointer;
+
+  @include hover {
+    color: $primary-color;
+    background-color: $white-color;
+  }
+
+  /* stylelint-disable-next-line order/order */
+  &:active,
+  &:focus {
+    color: $primary-color;
+    background: rgba(255, 255, 255, 90%);
+  }
 }

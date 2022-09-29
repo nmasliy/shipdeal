@@ -1,5 +1,5 @@
 .earn {
-  padding-top: 30px;
+  padding-top: 65px;
   background:
     url("../img/earn-bg-center.svg") left 31% top 55px no-repeat,
     url("../img/earn-bg-left.svg") top left no-repeat,
@@ -8,18 +8,24 @@
 
   &__inner {
     display: flex;
-    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1110px;
   }
 
   &__content {
-    padding-top: 100px;
+    padding-top: 65px;
     max-width: 460px;
     color: $white-color;
   }
 
   &__title {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     color: $white-color;
+
+    span {
+      margin-right: 12px;
+      margin-left: 4px;
+    }
   }
 
   &__subtitle {
@@ -38,8 +44,26 @@
   }
 
   &__btn {
-    img {
-      display: flex;
+    @include hover {
+      color: #494444;
+    }
+
+    /* stylelint-disable-next-line order/order */
+    display: flex;
+    color: #000;
+
+    svg {
+      height: auto;
+    }
+
+    path {
+      fill: currentcolor;
+      transition: $transition;
+    }
+
+    &:focus,
+    &:active {
+      color: #000;
     }
 
     &:last-child {
@@ -49,8 +73,8 @@
 
   &__img {
     position: relative;
-    right: -30px;
     align-self: flex-end;
+    margin-left: 35px;
 
     picture {
       display: flex;
@@ -62,6 +86,7 @@
 
     .earn__content {
       padding-top: 50px;
+      padding-bottom: 130px;
     }
   }
 }

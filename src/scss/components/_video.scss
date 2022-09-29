@@ -53,6 +53,17 @@
 
     z-index: 3;
     background-image: $accent-gradient;
+    transition: $transition;
+
+    @include hover {
+      background-image: linear-gradient(90deg, #ef8f00 0%, #f09d21 100%);
+    }
+
+    /* stylelint-disable-next-line order/order */
+    &:active,
+    &:focus {
+      background-image: linear-gradient(90deg, #e28800 0%, #e09019 100%);
+    }
   }
 
   &--transparent {
