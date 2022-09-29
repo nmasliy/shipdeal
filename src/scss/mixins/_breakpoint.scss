@@ -1,5 +1,11 @@
 /* stylelint-disable */
 
+@mixin desktop-xl {
+  @media (min-width: (3000px)) {
+    @content;
+  }
+}
+
 @mixin desktop {
   @media (min-width: (1025px)) {
     @content;

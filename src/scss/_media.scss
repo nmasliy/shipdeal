@@ -1,3 +1,10 @@
+// desktop >= 3000px
+@include desktop-xl {
+  .hero::after {
+    width: 37vw;
+  }
+}
+
 // desktop >= 1025px
 @include desktop {
   .menu__footer {
