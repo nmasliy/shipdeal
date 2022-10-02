@@ -23,9 +23,9 @@
   &__content {
     position: relative;
     flex-shrink: 0;
-    margin-right: 43px;
     padding-bottom: 50px;
-    max-width: 572px;
+    width: 100%;
+    max-width: 642px;
 
     &::before {
       @include bg-decor(47px);
@@ -40,19 +40,14 @@
       left: 70%;
       bottom: 40px;
     }
-
-    &--lg {
-      max-width: 642px;
-    }
   }
 
   &__img {
     flex-shrink: 0;
-    width: 1051px;
+    width: 1050px;
 
     picture {
       display: flex;
-      justify-content: flex-end;
     }
 
     &-mob {
@@ -127,8 +122,8 @@
     &::after {
       content: "";
       position: absolute;
-      right: -70px;
-      top: -61px;
+      right: -26px;
+      top: -56px;
       width: 125px;
       height: 75px;
       background: url("../img/decor-arrow-1.svg") center no-repeat;
@@ -145,6 +140,11 @@
     margin-bottom: 20px;
     font-size: 14px;
     line-height: 1.5;
+
+    b {
+      font-weight: 700;
+      color: #265feb;
+    }
   }
 
   &__buttons {
@@ -155,30 +155,64 @@
     @include mr(20px);
 
     @include hover {
-      color: #494444;
+      path {
+        fill: $white-color;
+      }
+
+      rect {
+        &:first-child {
+          fill: #000;
+        }
+
+        &:last-child {
+          stroke: #a6a6a6;
+        }
+      }
+
+      &:first-child {
+        @include hover-google;
+      }
     }
 
     /* stylelint-disable-next-line order/order */
     display: flex;
-    color: #000;
 
     svg {
       height: auto;
     }
 
-    path {
-      fill: currentcolor;
-      transition: $transition;
-    }
-
+    path,
     rect {
-      stroke: currentcolor;
       transition: $transition;
     }
 
     &:focus,
     &:active {
-      color: #000;
+      path {
+        fill: $white-color;
+
+        &:nth-last-child(5) {
+          fill: $white-color;
+        }
+
+        &:nth-last-child(4) {
+          fill: $white-color;
+        }
+
+        &:nth-last-child(3) {
+          fill: $white-color;
+        }
+
+        &:nth-last-child(2) {
+          fill: $white-color;
+        }
+      }
+
+      rect {
+        &:first-child {
+          fill: #000;
+        }
+      }
     }
   }
 }

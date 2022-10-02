@@ -137,14 +137,14 @@
   }
 
   .btn-outline {
-    border-color: $accent-color;
+    border-color: $primary-color;
     padding: 6px 28px;
     font-size: 12px;
     -webkit-text-fill-color: transparent;
     /* stylelint-disable-next-line property-no-unknown */
     text-fill-color: transparent;
-    color: $accent-color;
-    background: linear-gradient(90deg, #f90 0%, #ffaa2c 100%);
+    color: $primary-color;
+    background: linear-gradient(90deg, $primary-color 0%, $primary-color 100%);
     background-clip: text;
   }
 
@@ -175,7 +175,7 @@
           border-radius: 1px;
           width: 8px;
           height: 8px;
-          background-color: $dark-color;
+          background-color: $accent-color;
           transition: $transition;
         }
 
@@ -204,14 +204,14 @@
     flex-direction: column;
     align-items: flex-start;
     overflow: auto;
-    padding: 20px 0 115px;
+    padding: 20px 0 40px;
     background-color: $white-color;
     opacity: 0;
     transition: $menu-transition ease;
 
     &__footer {
       margin-top: auto;
-      padding: 30px;
+      padding: 30px 30px 0;
     }
 
     &.is-active {
@@ -471,6 +471,8 @@
 
     &__inner {
       display: block;
+      margin: 0 12px;
+      padding-left: 0;
     }
 
     &__phone {
@@ -708,11 +710,6 @@
       span {
         display: none;
       }
-
-      b {
-        font-weight: 700;
-        color: $primary-color;
-      }
     }
 
     &__buttons {
@@ -812,6 +809,10 @@
       display: block;
     }
 
+    &__title {
+      margin-bottom: 20px;
+    }
+
     &__item {
       @include mb(10px);
     }
@@ -823,7 +824,7 @@
     }
 
     &--transparent {
-      padding: 0;
+      margin: 0;
     }
   }
 
@@ -910,13 +911,23 @@
     }
   }
 
+  .action__title {
+    margin-bottom: 20px;
+  }
+
   .how {
     padding: 60px 0;
   }
 
   .ship {
+    margin-top: 35px;
+
     .swiper-slide {
       width: 305px;
+    }
+
+    &__title {
+      margin: 0 -10px;
     }
 
     &__pagination {
@@ -976,7 +987,7 @@
   }
 
   .kids {
-    padding: 80px 0 60px;
+    padding: 60px 0;
 
     &__info {
       margin: 0 auto;
@@ -998,7 +1009,8 @@
     }
 
     &__subtitle {
-      margin-bottom: 10px;
+      margin: 0 -10px 10px;
+      font-size: 16px;
     }
   }
 
@@ -1089,12 +1101,7 @@
     &__col {
       li {
         margin-bottom: 20px;
-        padding-left: 0;
         font-size: 14px;
-
-        &::before {
-          display: none;
-        }
       }
 
       &:first-child {
@@ -1111,7 +1118,11 @@
         margin-bottom: 40px;
 
         ul {
-          margin: 0 22px;
+          margin: 0;
+
+          &:last-child {
+            margin-left: 25px;
+          }
         }
       }
     }
@@ -1150,7 +1161,11 @@
     }
 
     &__item {
-      @include mb(20px);
+      @include mb(25px);
+    }
+
+    &__subtitle {
+      margin-bottom: 20px;
     }
 
     &__text {
@@ -1300,7 +1315,8 @@
 
     &__head {
       padding: 13px 55px 13px 20px;
-      font-size: 14px;
+      font-size: 16px;
+      line-height: 1.4;
 
       &::after {
         right: 20px;
@@ -1312,7 +1328,8 @@
 
     &__content {
       padding: 0 40px 10px 20px;
-      font-size: 12px;
+      font-size: 14px;
+      line-height: 1.4;
     }
   }
 
@@ -1458,12 +1475,17 @@
           margin-bottom: 0;
         }
       }
+
+      span {
+        margin: auto 0 auto 12px;
+      }
     }
   }
 
   .action-steps {
     &__badge {
       padding: 2px 6px;
+      white-space: nowrap;
 
       &--lg {
         font-size: 12px;
@@ -1476,7 +1498,8 @@
 
     &__list {
       grid-template-columns: repeat(3, 1fr);
-      gap: 25px 8px;
+      padding-right: 5px;
+      gap: 25px 10px;
     }
   }
 
@@ -1495,8 +1518,8 @@
 
     &__head {
       padding-left: 19px;
-      font-size: 14px;
-      line-height: 17px;
+      font-size: 16px;
+      line-height: 1.4;
 
       &::before {
         top: 5px;
@@ -1513,7 +1536,8 @@
 
     &__info {
       padding-left: 19px;
-      font-size: 12px;
+      font-size: 14px;
+      line-height: 1.4;
     }
   }
 
@@ -1558,6 +1582,11 @@
       }
     }
   }
+
+  .footer__btn svg {
+    width: auto;
+    height: 38px;
+  }
 }
 
 // xs-mobile <= 360px
@@ -1587,10 +1616,6 @@
   .action-steps {
     &__badge {
       padding: 2px 4px;
-    }
-
-    &__list {
-      gap: 25px 2px;
     }
   }
 

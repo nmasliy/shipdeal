@@ -38,7 +38,7 @@
       }
 
       @include hover {
-        color: rgba(255, 255, 255, 80%);
+        color: $accent-color;
 
         &::before {
           background-color: rgba(255, 153, 0, 80%);
@@ -78,8 +78,86 @@
   }
 
   &__btn {
-    display: block;
+    @include hover {
+      path {
+        fill: $white-color;
+      }
+
+      rect {
+        &:first-child {
+          fill: #000;
+        }
+
+        &:last-child {
+          stroke: transparent;
+        }
+      }
+
+      &:first-child {
+        @include hover-google;
+      }
+    }
+
+    /* stylelint-disable-next-line order/order */
+    display: flex;
     margin-bottom: 12px;
+
+    svg {
+      width: 126px;
+      height: auto;
+    }
+
+    path,
+    rect {
+      transition: $transition;
+    }
+
+    path {
+      fill: $white-color;
+    }
+
+    rect {
+      &:first-child {
+        fill: transparent;
+      }
+
+      &:last-child {
+        stroke: $white-color;
+      }
+    }
+
+    &:focus,
+    &:active {
+      path {
+        fill: $white-color;
+
+        &:nth-last-child(5) {
+          fill: $white-color;
+        }
+
+        &:nth-last-child(4) {
+          fill: $white-color;
+        }
+
+        &:nth-last-child(3) {
+          fill: $white-color;
+        }
+
+        &:nth-last-child(2) {
+          fill: $white-color;
+        }
+      }
+
+      rect {
+        &:first-child {
+          fill: #000;
+        }
+
+        &:last-child {
+          stroke: transparent;
+        }
+      }
+    }
 
     &:last-child {
       margin-bottom: 0;

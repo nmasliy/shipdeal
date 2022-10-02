@@ -141,3 +141,26 @@ $browser-context: 16; // Default
   height: $size;
   background: url("../img/decor-box.svg") center / cover no-repeat;
 }
+
+@mixin hover-google {
+  rect {
+    &:first-child {
+      fill: black;
+    }
+  }
+  path {
+    fill: #fff;
+    &:nth-last-child(5) {
+      fill: #EA4335;
+    }
+    &:nth-last-child(4) {
+      fill: #FBBC04;
+    }
+    &:nth-last-child(3) {
+      fill: #4285F4;
+    }
+    &:nth-last-child(2) {
+      fill: #34A853;
+    }
+  }
+}

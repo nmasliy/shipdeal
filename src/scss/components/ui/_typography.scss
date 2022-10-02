@@ -38,4 +38,9 @@
   padding: 2px 12px;
   background-image: $accent-gradient;
   background-color: $accent-color;
+
+  &--offset {
+    margin-right: 12px;
+    margin-left: 4px;
+  }
 }

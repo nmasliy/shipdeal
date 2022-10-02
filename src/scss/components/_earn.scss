@@ -21,11 +21,6 @@
   &__title {
     margin-bottom: 25px;
     color: $white-color;
-
-    span {
-      margin-right: 12px;
-      margin-left: 4px;
-    }
   }
 
   &__subtitle {
@@ -45,25 +40,66 @@
 
   &__btn {
     @include hover {
-      color: #494444;
+      path {
+        fill: $white-color;
+      }
+
+      rect {
+        &:first-child {
+          fill: #000;
+        }
+      }
+
+      &:first-child {
+        @include hover-google;
+      }
     }
 
     /* stylelint-disable-next-line order/order */
     display: flex;
-    color: #000;
 
     svg {
       height: auto;
     }
 
-    path {
-      fill: currentcolor;
+    path,
+    rect {
       transition: $transition;
+    }
+
+    rect {
+      &:last-child {
+        stroke: transparent;
+      }
     }
 
     &:focus,
     &:active {
-      color: #000;
+      path {
+        fill: $white-color;
+
+        &:nth-last-child(5) {
+          fill: $white-color;
+        }
+
+        &:nth-last-child(4) {
+          fill: $white-color;
+        }
+
+        &:nth-last-child(3) {
+          fill: $white-color;
+        }
+
+        &:nth-last-child(2) {
+          fill: $white-color;
+        }
+      }
+
+      rect {
+        &:first-child {
+          fill: #000;
+        }
+      }
     }
 
     &:last-child {
