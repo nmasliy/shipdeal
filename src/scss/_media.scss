@@ -1496,6 +1496,10 @@
       margin-bottom: 10px;
     }
 
+    &__name {
+      max-width: 96px;
+    }
+
     &__list {
       grid-template-columns: repeat(3, 1fr);
       padding-right: 5px;
