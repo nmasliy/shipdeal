@@ -193,6 +193,16 @@
     }
   }
 
+  .header {
+    &__languages {
+      margin-right: 10px;
+    }
+
+    &__logo {
+      margin-right: 15px;
+    }
+  }
+
   .menu {
     position: fixed;
     left: 0;
