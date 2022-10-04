@@ -25,7 +25,7 @@ function initMobileSlider(parent, wrapper, items, breakpoint = 1024) {
 
 const reviews = new Swiper('.reviews__slider', {
   slidesPerView: 3,
-  spaceBetween: 30,
+  spaceBetween: 20,
   navigation: {
     nextEl: '.reviews__next',
     prevEl: '.reviews__prev',
@@ -43,12 +43,12 @@ const reviews = new Swiper('.reviews__slider', {
     // when window width is >= 768px
     768: {
       slidesPerView: 2,
-      spaceBetween: 30,
+      spaceBetween: 20,
     },
     // when window width is >= 1280px
     1280: {
       slidesPerView: 3,
-      spaceBetween: 30,
+      spaceBetween: 20,
     },
   },
 });

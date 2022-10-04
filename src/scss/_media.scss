@@ -26,6 +26,10 @@
     font-size: 32px;
   }
 
+  .header__nav {
+    margin-left: 0;
+  }
+
   .hero {
     &::after {
       width: 280px;
@@ -81,6 +85,7 @@
 
     &__phone {
       left: -34px;
+      top: auto;
       bottom: -97px;
     }
 
@@ -488,11 +493,11 @@
     &__phone {
       &-img {
         position: absolute;
-        left: 10px;
-        bottom: -19px;
+        left: 3px;
+        bottom: -48px;
 
         img {
-          width: 140px;
+          width: 215px;
         }
       }
     }
@@ -1269,6 +1274,16 @@
       &:last-child {
         padding-top: 30px;
         padding-bottom: 42px;
+      }
+    }
+  }
+
+  .how {
+    &__phone-img {
+      bottom: -30px;
+
+      img {
+        width: 150px;
       }
     }
   }
