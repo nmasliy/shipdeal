@@ -437,6 +437,7 @@
 
       &:first-child {
         margin-bottom: 20px;
+        height: auto;
 
         &::after {
           display: none;
@@ -504,6 +505,10 @@
 
     &__img {
       display: none;
+    }
+
+    &__title {
+      white-space: normal;
     }
   }
 
@@ -615,6 +620,7 @@
 
     &__title {
       margin-bottom: 20px;
+      min-width: auto;
     }
 
     &__content {

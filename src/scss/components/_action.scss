@@ -58,6 +58,7 @@
 
     &:first-child {
       border-bottom: 1px solid rgba(38, 95, 235, 26%);
+      height: 420px;
     }
 
     &:last-child {
@@ -97,8 +98,11 @@
 
   &__list {
     display: grid;
-    grid-template-columns: minmax(auto, 248px) minmax(auto, 217px);
-    gap: 30px;
+
+    // grid-template-columns: minmax(auto, 248px) minmax(auto, 217px);
+    // gap: 30px;
+    grid-template-columns: minmax(auto, 263px) minmax(auto, 217px);
+    gap: 30px 25px;
 
     li {
       display: flex;
