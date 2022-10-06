@@ -240,6 +240,8 @@
     }
 
     &__content {
+      max-width: 500px;
+
       &::before,
       &::after {
         display: none;
@@ -651,6 +653,14 @@
 
 // small-tablet <= 768px
 @include small-tablet {
+  .page--en {
+    .benefits {
+      &__inner {
+        padding-top: 150px;
+      }
+    }
+  }
+
   .section-offset {
     margin: 60px 0;
   }
@@ -887,6 +897,7 @@
 
     &__box {
       padding: 17px 12px 17px 22px;
+      min-height: 150px;
     }
 
     &__prev,
@@ -1096,7 +1107,9 @@
 
   .footer {
     &__logo {
-      margin-bottom: 30px;
+      display: block;
+      margin: 0 auto 30px;
+      width: 166px;
 
       picture {
         justify-content: center;
@@ -1182,7 +1195,7 @@
     }
 
     &__item {
-      @include mb(25px);
+      @include mb(32px);
     }
 
     &__subtitle {
@@ -1191,6 +1204,10 @@
 
     &__text {
       padding: 0 11px;
+    }
+
+    &__name {
+      margin-bottom: 6px;
     }
 
     &__img {
@@ -1275,6 +1292,7 @@
       &:first-child {
         border: none;
         padding-bottom: 0;
+        height: auto;
       }
 
       &:last-child {
