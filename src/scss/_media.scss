@@ -791,6 +791,10 @@
       }
     }
 
+    &__title--max-w {
+      max-width: 310px;
+    }
+
     &__content {
       overflow: visible;
       margin-top: 20px;
@@ -1454,6 +1458,12 @@
       width: 52px;
       height: 52px;
     }
+  }
+
+  .why__title br {
+    content: " ";
+    display: inline;
+    clear: none;
   }
 
   .video {
