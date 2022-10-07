@@ -13,7 +13,7 @@
   &__inner {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 0 60px;
+    gap: 0 59px;
   }
 
   &__content {
@@ -51,6 +51,19 @@
         width: 10px;
         height: 10px;
         background-color: $primary-color;
+      }
+    }
+
+    &--600 {
+      max-width: 600px;
+
+      ul,
+      p {
+        max-width: 560px;
+      }
+
+      p:first-child {
+        max-width: 600px;
       }
     }
   }
