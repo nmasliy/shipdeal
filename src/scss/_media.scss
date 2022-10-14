@@ -1552,6 +1552,7 @@
     }
 
     &__name {
+      margin-right: 5px;
       max-width: 96px;
     }
 
@@ -1675,6 +1676,10 @@
   .action-steps {
     &__badge {
       padding: 2px 4px;
+    }
+
+    &__name {
+      word-break: break-word;
     }
   }
 
