@@ -173,16 +173,19 @@
     border-top: 1px solid rgba(255, 255, 255, 8%);
     padding: 28px 0;
 
-    ul {
+    .container {
       display: flex;
-      align-items: center;
       justify-content: center;
     }
 
-    li {
-      @include mr(24px);
+    ul {
+      display: flex;
+      align-items: center;
+    }
 
+    li {
       flex-shrink: 0;
+      padding: 0 24px;
       font-size: 14px;
       line-height: 17px;
       color: rgba($white-color, 0.3);
