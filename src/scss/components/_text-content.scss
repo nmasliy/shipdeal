@@ -19,9 +19,16 @@
   h3 {
     padding: 16px 0 24px;
     font-weight: 700;
-    font-size: 32px;
-    line-height: 140%;
+    font-size: 26px;
+    line-height: 1.4;
     text-transform: uppercase;
+  }
+
+  h4 {
+    padding: 8px 0 12px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.4;
   }
 
   b,
@@ -30,12 +37,14 @@
   }
 
   li {
+    padding: 8px 0;
     font-size: 18px;
     line-height: 1.6;
   }
 
   ul {
     padding-bottom: 16px;
+    padding-left: 20px;
   }
 
   p {

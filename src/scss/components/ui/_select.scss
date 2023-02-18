@@ -52,8 +52,13 @@
     display: block;
     padding: 12px 32px;
     color: $black-color;
+    transition: 0.2s;
     cursor: pointer;
     user-select: none;
+
+    @include hover {
+      background-color: rgba($primary-color, 0.15);
+    }
   }
 
   &.active {

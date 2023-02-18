@@ -954,10 +954,6 @@
   .ship {
     margin-top: 35px;
 
-    .swiper-slide {
-      width: 305px;
-    }
-
     &__title {
       margin: 0 -10px;
     }
@@ -967,8 +963,16 @@
     }
 
     &__slider-wrapper {
-      overflow: visible;
-      padding: 0;
+      margin: 0 -16px;
+      padding: 0 0 0 16px;
+    }
+
+    .swiper-slide {
+      width: 305px;
+
+      .ship__item {
+        opacity: 1;
+      }
     }
 
     &__slider {

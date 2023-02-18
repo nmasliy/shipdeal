@@ -68,12 +68,14 @@ const ship = new Swiper('.ship__slider', {
   breakpoints: {
     // when window width is >= 320px
     320: {
-      spaceBetween: 10,
+      spaceBetween: 16,
       slidesPerView: 'auto',
+      watchSlidesProgress: false,
     },
     // when window width is >= 768px
     768: {
       spaceBetween: 0,
+      watchSlidesProgress: true,
       slidesPerView: 2,
     },
     // when window width is >= 1280px
