@@ -990,7 +990,10 @@
     }
 
     &__item {
+      border-radius: 10px;
       padding: 0;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 8%);
+      filter: none;
     }
 
     &__info {
