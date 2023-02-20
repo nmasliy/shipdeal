@@ -964,11 +964,12 @@
 
     &__slider-wrapper {
       margin: 0 -16px;
-      padding: 0 0 0 16px;
+      padding: 0 16px;
     }
 
     .swiper-slide {
       width: 305px;
+      height: 400px;
 
       .ship__item {
         opacity: 1;
@@ -977,6 +978,7 @@
 
     &__slider {
       height: auto;
+      max-height: 400px;
     }
 
     &__subtitle {
