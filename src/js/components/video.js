@@ -1,7 +1,7 @@
 const videoParent = document.querySelector('.video__box');
+const videoElement = videoParent?.querySelector('video');
 
-if (videoParent) {
-  const videoElement = videoParent.querySelector('video');
+if (videoParent && videoElement) {
   const videoBtn = videoParent.querySelector('.video__play-btn');
 
   videoParent.addEventListener('click', playVideo);
